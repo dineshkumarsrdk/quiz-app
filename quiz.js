@@ -64,6 +64,7 @@ function nextQuestion(){
   currentQuestion++;
   optionEle.textContent='';
   if(currentQuestion === questions.length){
+    optionEle.remove();
     nextEle.remove();
     questionEle.textContent = 'You have completed the quiz successfully!';
   } else {
